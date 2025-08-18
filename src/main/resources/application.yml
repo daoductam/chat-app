@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: jdbc:mysql://root:hTgsMNHkOjRhSVycoMYhRCtPIUbRaobe@mysql.railway.internal:3306/railway
+    username: root
+    password: hTgsMNHkOjRhSVycoMYhRCtPIUbRaobe
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -14,8 +14,5 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
 
 jwt:
-  secret: ${JWT_SECURE}
+  secret: 178bzzZ022COkxKjifx1ZxwUFyjAEeXxH3i8hol5q2k=
   expiration: 3600000
-
-server:
-  port: ${PORT:8080}
