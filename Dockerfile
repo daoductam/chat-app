@@ -1,4 +1,4 @@
-FROM maven:3-openjdk-17-slim AS build
+FROM maven:3-eclipse-temurin-21-alpine AS build
 
 WORKDIR /app
 COPY . .
