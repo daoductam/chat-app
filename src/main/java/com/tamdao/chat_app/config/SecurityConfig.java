@@ -76,7 +76,7 @@ public class SecurityConfig {
 
         CorsConfiguration corsConfiguration = new CorsConfiguration();
 //        corsConfiguration.setAllowedOriginPatterns(Arrays.asList("*"));
-        corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:5173"));
+        corsConfiguration.setAllowedOrigins(Arrays.asList("https://chat-app-frontend-seven-bice.vercel.app/"));
 
         corsConfiguration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         corsConfiguration.setAllowedHeaders(Arrays.asList("*"));
