@@ -5,7 +5,7 @@ services:
     image: mysql:8.1
     container_name: chat-mysql
     environment:
-      MYSQL_ROOT_PASSWORD: TaM123456789@
+      MYSQL_ROOT_PASSWORD: hTgsMNHkOjRhSVycoMYhRCtPIUbRaobe
       MYSQL_DATABASE: chat_db
     ports:
       - "3306:3306"
@@ -20,9 +20,9 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/chat_db
+      SPRING_DATASOURCE_URL: jdbc:mysql://root:hTgsMNHkOjRhSVycoMYhRCtPIUbRaobe@hopper.proxy.rlwy.net:14238/railwayjdbc:mysql://root:hTgsMNHkOjRhSVycoMYhRCtPIUbRaobe@hopper.proxy.rlwy.net:14238/railway
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: TaM123456789@
+      SPRING_DATASOURCE_PASSWORD: hTgsMNHkOjRhSVycoMYhRCtPIUbRaobe
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
     ports:
       - "8080:8080"
